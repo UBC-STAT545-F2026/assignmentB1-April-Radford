@@ -17,6 +17,7 @@ library(testthat)
 
 
 ```{r Exercise #1 and #2:}
+#' Title: Convert Hectares to other Units
 #' description: this function converts an area in hectares to any unit in the list: square kilometers, square metres, acres
 #' 
 #' @param area_ha : input area of hectares to be converted. name was chosen for clarity, as this sould be area in hectares.

@@ -9,6 +9,7 @@ library(testthat)
 ```
 
 ``` r
+#' Title: Convert Hectares to other Units
 #' description: this function converts an area in hectares to any unit in the list: square kilometers, square metres, acres
 #' 
 #' @param area_ha : input area of hectares to be converted. name was chosen for clarity, as this sould be area in hectares.
@@ -50,7 +51,7 @@ test_that("One hectare equals 2.47105 acres", {
 })
 ```
 
-    ## Test passed 🥳
+    ## Test passed 🎊
 
 ``` r
 # test that negative inputs still work. In certain cases, a negative value may need to be converted as an area.
@@ -59,7 +60,7 @@ test_that("Negative areas are still calculated", {
 })
 ```
 
-    ## Test passed 🎊
+    ## Test passed 🎉
 
 ``` r
 #test that the function still works on non-integers
@@ -70,7 +71,7 @@ test_that("Non-integer inputs work correctly", {
 })
 ```
 
-    ## Test passed 🎊
+    ## Test passed 🥇
 
 ``` r
 #test that non-numeric inputs are not accepted
@@ -80,7 +81,7 @@ test_that("Non-numeric inputs are rejected", {
 })
 ```
 
-    ## Test passed 😸
+    ## Test passed 🥇
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
