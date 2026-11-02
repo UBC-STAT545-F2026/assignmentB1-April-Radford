@@ -4,7 +4,6 @@ April Radford
 2026-10-30
 
 ``` r
-#import libraries
 library(roxygen2)
 library(testthat)
 ```
