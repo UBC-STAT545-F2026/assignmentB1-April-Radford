@@ -2,21 +2,21 @@
 title: "assignmentB1"
 author: "April Radford"
 date: "2026-10-30"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r code}
+```{r libraries}
 library(roxygen2)
 library(testthat)
 ```
 
-Exercise #1 and #2:
 
-```{r code}
+
+```{r Exercise #1 and #2:}
 #' description: this function converts an area in hectares to any unit in the list: square kilometers, square metres, acres
 #' 
 #' @param area_ha : input area of hectares to be converted. name was chosen for clarity, as this sould be area in hectares.
@@ -30,8 +30,8 @@ convert_ha <- function(area_ha, to_unit = c("km2", "m2", "acres")){
   result}
 ```
 
-Exercise #3: Demonstration
-```{r code}
+
+```{r Exercise #3: Demonstration}
 
 #convert 100 hectares to square kilometres
 convert_ha(100, "km2")
@@ -43,8 +43,8 @@ convert_ha(100, "m2")
 convert_ha(100, "acres")
 
 ```
-Exercise #4: test
-```{r code}
+
+```{r Exercise #4: test}
 
 #One hectare is equal to 2.47105 acres. This tests that teh conversion is accurate.
 test_that("One hectare equals 2.47105 acres", {
